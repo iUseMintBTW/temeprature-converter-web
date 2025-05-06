@@ -1,0 +1,61 @@
+<!DOCTYPE HTML5>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="">
+        <title>Conversor de Temperatura</title>
+        <style>
+            body
+            {
+                position: absolute;
+            }
+            .barraDeNavegacao
+            {
+                display: flex;
+                flex-wrap: wrap; /* Permite que os itens quebrem para nova linha */
+                gap: 10px; /* Espaço entre os itens */
+                list-style: none; /* Remove os marcadores de lista */
+                padding: 0;
+                margin: 0;
+            }
+            .barraDeNavegacao li
+            {
+                padding: 8px 12px;
+                border-radius: 4px;
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="barraDeNavegacao">
+                <li>
+                    <button onclick="window.location.reload(true)">
+                        Recarregar pagina
+                    </button>
+                </li>
+                <li>Repositório do projeto</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+        <fieldset>
+            <h1>Conversor de temperaturas</h1>
+            <fieldset>
+                <ol>
+                    <li>Celcius para Fahrenheit</li>
+                    <li>Celcius para Kelvin</li>
+                    <li>Fahrenheit para Celcius</li>
+                    <li>Fahrenheit para Kelvin</li>
+                    <li>Kelvin para Celcius</li>
+                    <li>Kelvin para Fahrenheit</li>
+                </ol>
+            </fieldset>
+            <input type="number"><button onclick="">Q</button>
+        </fieldset>
+        <footer></footer>
+    </body>
+    <script src=""></script>
+</html>
