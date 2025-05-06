@@ -5,24 +5,52 @@
         <link rel="stylesheet" href="">
         <title>Conversor de Temperatura</title>
         <style>
+            *{font-size: x-large;}
             body
             {
-                position: absolute;
+                background-color: #ACD3A8;
+                font-size: larger;
+            }
+            .main
+            {
+                display: flex;
+                justify-content: center; /* Horizontal centering */
+                align-items: center;     /* Vertical centering */
+                height: 100vh;  
+            }
+            .mainfield
+            {
+                background-color: #8AB2A6;
+                width: 50%;
             }
             .barraDeNavegacao
             {
+                background-color: #8AB2A6;
                 display: flex;
                 flex-wrap: wrap; /* Permite que os itens quebrem para nova linha */
                 gap: 10px; /* Espaço entre os itens */
                 list-style: none; /* Remove os marcadores de lista */
                 padding: 0;
                 margin: 0;
+                border-radius: 6%;
             }
             .barraDeNavegacao li
             {
                 padding: 8px 12px;
                 border-radius: 4px;
                 list-style: none;
+            }
+            fieldset
+            {
+                border-radius: 2%;
+            }
+            h1
+            {text-align: center;}
+            ol li
+            {
+                width: 200px; /* Fixed width */
+                margin: 0 auto; /* Top/Bottom = 0, Left/Right = auto */
+                padding-top: 12px;
             }
         </style>
     </head>
@@ -41,7 +69,7 @@
                 <li></li>
             </ul>
         </nav>
-        <fieldset>
+        <div class="main"><fieldset class="mainfield">
             <h1>Conversor de temperaturas</h1>
             <fieldset>
                 <ol>
@@ -53,8 +81,10 @@
                     <li>Kelvin para Fahrenheit</li>
                 </ol>
             </fieldset>
-            <input type="number"><button onclick="">Q</button>
-        </fieldset>
+            <div class="campoPesquisa">
+                <input type="number"><button onclick="" class="iniciar">→</button>
+            </div>
+        </fieldset></div>
         <footer></footer>
     </body>
     <script src=""></script>
